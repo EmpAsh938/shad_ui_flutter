@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shad_ui_flutter/shad_ui_flutter.dart';
-import 'package:shad_ui_flutter/src/tokens/tokens.dart';
 
 class AlertDemo extends StatefulWidget {
   const AlertDemo({super.key});

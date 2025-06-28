@@ -73,7 +73,6 @@ class _ShadAlertState extends State<ShadAlert>
       case ShadAlertSize.lg:
         return ShadRadius.lg;
       case ShadAlertSize.md:
-      default:
         return ShadRadius.md;
     }
   }
@@ -85,7 +84,6 @@ class _ShadAlertState extends State<ShadAlert>
       case ShadAlertSize.lg:
         return const EdgeInsets.all(ShadSpacing.lg);
       case ShadAlertSize.md:
-      default:
         return const EdgeInsets.all(ShadSpacing.md);
     }
   }
@@ -97,7 +95,6 @@ class _ShadAlertState extends State<ShadAlert>
       case ShadAlertSize.lg:
         return ShadTypography.fontSizeLg;
       case ShadAlertSize.md:
-      default:
         return ShadTypography.fontSizeMd;
     }
   }
@@ -109,7 +106,6 @@ class _ShadAlertState extends State<ShadAlert>
       case ShadAlertSize.lg:
         return 24.0;
       case ShadAlertSize.md:
-      default:
         return 20.0;
     }
   }
