@@ -245,7 +245,6 @@ class _ShadInputState extends State<ShadInput>
       case ShadInputState.warning:
         return theme.warningColor;
       case ShadInputState.normal:
-      default:
         return Colors.transparent;
     }
   }

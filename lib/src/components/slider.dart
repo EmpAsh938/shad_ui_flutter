@@ -59,7 +59,6 @@ class _ShadSliderState extends State<ShadSlider> {
       case ShadSliderSize.lg:
         return 6.0;
       case ShadSliderSize.md:
-      default:
         return 4.0;
     }
   }
@@ -72,7 +71,6 @@ class _ShadSliderState extends State<ShadSlider> {
       case ShadSliderSize.lg:
         return 14.0;
       case ShadSliderSize.md:
-      default:
         return 10.0;
     }
   }

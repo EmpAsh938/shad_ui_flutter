@@ -116,11 +116,6 @@ class _ShadAlertState extends State<ShadAlert>
 
   Color _getBackgroundColor(ShadThemeData theme) {
     switch (widget.variant) {
-      case ShadAlertVariant.default_:
-        return ShadBaseColors.getColor(
-          theme.baseColor,
-          theme.brightness == Brightness.light ? 50 : 900,
-        );
       case ShadAlertVariant.destructive:
         return theme.errorColor.withValues(alpha: 0.1);
       case ShadAlertVariant.warning:
@@ -129,16 +124,13 @@ class _ShadAlertState extends State<ShadAlert>
         return theme.successColor.withValues(alpha: 0.1);
       case ShadAlertVariant.info:
         return theme.primaryColor.withValues(alpha: 0.1);
+      case ShadAlertVariant.default_:
+        return theme.primaryColor.withValues(alpha: 0.1);
     }
   }
 
   Color _getBorderColor(ShadThemeData theme) {
     switch (widget.variant) {
-      case ShadAlertVariant.default_:
-        return ShadBaseColors.getColor(
-          theme.baseColor,
-          theme.brightness == Brightness.light ? 200 : 700,
-        );
       case ShadAlertVariant.destructive:
         return theme.errorColor.withValues(alpha: 0.3);
       case ShadAlertVariant.warning:
@@ -147,16 +139,13 @@ class _ShadAlertState extends State<ShadAlert>
         return theme.successColor.withValues(alpha: 0.3);
       case ShadAlertVariant.info:
         return theme.primaryColor.withValues(alpha: 0.3);
+      case ShadAlertVariant.default_:
+        return theme.primaryColor.withValues(alpha: 0.3);
     }
   }
 
   Color _getTextColor(ShadThemeData theme) {
     switch (widget.variant) {
-      case ShadAlertVariant.default_:
-        return ShadBaseColors.getColor(
-          theme.baseColor,
-          theme.brightness == Brightness.light ? 900 : 50,
-        );
       case ShadAlertVariant.destructive:
         return theme.errorColor;
       case ShadAlertVariant.warning:
@@ -164,6 +153,23 @@ class _ShadAlertState extends State<ShadAlert>
       case ShadAlertVariant.success:
         return theme.successColor;
       case ShadAlertVariant.info:
+        return theme.primaryColor;
+      case ShadAlertVariant.default_:
+        return theme.primaryColor;
+    }
+  }
+
+  Color _getIconColor(ShadThemeData theme) {
+    switch (widget.variant) {
+      case ShadAlertVariant.destructive:
+        return theme.errorColor;
+      case ShadAlertVariant.warning:
+        return theme.warningColor;
+      case ShadAlertVariant.success:
+        return theme.successColor;
+      case ShadAlertVariant.info:
+        return theme.primaryColor;
+      case ShadAlertVariant.default_:
         return theme.primaryColor;
     }
   }
