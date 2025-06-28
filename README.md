@@ -256,7 +256,7 @@ ShadButton(
 
 - [Component Documentation](https://pub.dev/documentation/shad_ui_flutter)
 - [API Reference](https://pub.dev/documentation/shad_ui_flutter/latest/)
-- [Examples](https://github.com/your-username/shad_ui_flutter/tree/main/example)
+- [Examples](https://github.com/empash938/shad_ui_flutter/tree/main/example)
 
 ## 🤝 Contributing
 
@@ -280,7 +280,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@shadui.dev
-- 🐛 Issues: [GitHub Issues](https://github.com/your-username/shad_ui_flutter/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/your-username/shad_ui_flutter/discussions)
+- 📧 Email: ashokthapa938@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/empash938/shad_ui_flutter/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/empash938/shad_ui_flutter/discussions)
 - 📖 Documentation: [pub.dev](https://pub.dev/packages/shad_ui_flutter)
