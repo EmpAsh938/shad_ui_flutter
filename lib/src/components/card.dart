@@ -212,7 +212,7 @@ class _ShadCardState extends State<ShadCard>
       case ShadCardVariant.default_:
         return [
           BoxShadow(
-            color: baseColor.withOpacity(0.1),
+            color: baseColor.withValues(alpha: 0.1),
             blurRadius: 4,
             offset: const Offset(0, 2),
           ),

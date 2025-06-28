@@ -379,7 +379,7 @@ class _ShadTimePickerState extends State<ShadTimePicker>
     bool hasError,
     bool isDisabled,
   ) {
-    if (isDisabled) return tokens.backgroundColor.withOpacity(0.5);
+    if (isDisabled) return tokens.backgroundColor.withValues(alpha: 0.5);
     if (hasError) return tokens.backgroundColor;
     if (_isPressed) return tokens.hoverBackgroundColor;
     return tokens.backgroundColor;
@@ -390,7 +390,7 @@ class _ShadTimePickerState extends State<ShadTimePicker>
     bool hasError,
     bool isDisabled,
   ) {
-    if (isDisabled) return tokens.borderColor.withOpacity(0.5);
+    if (isDisabled) return tokens.borderColor.withValues(alpha: 0.5);
     if (hasError) return Colors.red;
     if (_isPressed) return tokens.focusBorderColor;
     return tokens.borderColor;
@@ -401,7 +401,7 @@ class _ShadTimePickerState extends State<ShadTimePicker>
     bool hasError,
     bool isDisabled,
   ) {
-    if (isDisabled) return tokens.textColor.withOpacity(0.5);
+    if (isDisabled) return tokens.textColor.withValues(alpha: 0.5);
     if (hasError) return Colors.red;
     return tokens.textColor;
   }
@@ -411,7 +411,7 @@ class _ShadTimePickerState extends State<ShadTimePicker>
     bool hasError,
     bool isDisabled,
   ) {
-    if (isDisabled) return tokens.iconColor.withOpacity(0.5);
+    if (isDisabled) return tokens.iconColor.withValues(alpha: 0.5);
     if (hasError) return Colors.red;
     return tokens.iconColor;
   }

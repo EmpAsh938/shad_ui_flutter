@@ -245,35 +245,35 @@ class _ShadProgressState extends State<ShadProgress>
     switch (widget.variant) {
       case ShadProgressVariant.default_:
         return ShadProgressVariantTokens(
-          trackColor: theme.mutedColor.withOpacity(0.2),
+          trackColor: theme.mutedColor.withValues(alpha: 0.2),
           progressColor: theme.primaryColor,
           labelColor: theme.textColor,
           valueColor: theme.mutedColor,
         );
       case ShadProgressVariant.destructive:
         return ShadProgressVariantTokens(
-          trackColor: theme.errorColor.withOpacity(0.2),
+          trackColor: theme.errorColor.withValues(alpha: 0.2),
           progressColor: theme.errorColor,
           labelColor: theme.textColor,
           valueColor: theme.errorColor,
         );
       case ShadProgressVariant.warning:
         return ShadProgressVariantTokens(
-          trackColor: theme.warningColor.withOpacity(0.2),
+          trackColor: theme.warningColor.withValues(alpha: 0.2),
           progressColor: theme.warningColor,
           labelColor: theme.textColor,
           valueColor: theme.warningColor,
         );
       case ShadProgressVariant.success:
         return ShadProgressVariantTokens(
-          trackColor: theme.successColor.withOpacity(0.2),
+          trackColor: theme.successColor.withValues(alpha: 0.2),
           progressColor: theme.successColor,
           labelColor: theme.textColor,
           valueColor: theme.successColor,
         );
       case ShadProgressVariant.info:
         return ShadProgressVariantTokens(
-          trackColor: theme.primaryColor.withOpacity(0.2),
+          trackColor: theme.primaryColor.withValues(alpha: 0.2),
           progressColor: theme.primaryColor,
           labelColor: theme.textColor,
           valueColor: theme.primaryColor,

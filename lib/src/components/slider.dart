@@ -125,7 +125,7 @@ class _ShadSliderState extends State<ShadSlider> {
         inactiveTrackColor: _getInactiveColor(theme),
         trackHeight: _getTrackHeight(),
         thumbColor: _getThumbColor(theme),
-        overlayColor: _getActiveColor(theme).withOpacity(0.1),
+        overlayColor: _getActiveColor(theme).withValues(alpha: 0.1),
         thumbShape: RoundSliderThumbShape(
           enabledThumbRadius: _getThumbRadius(),
         ),

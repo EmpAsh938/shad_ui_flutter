@@ -179,7 +179,6 @@ class _ShadAccordionState extends State<ShadAccordion>
           itemSpacing: ShadSpacing.md,
         );
       case ShadAccordionSize.md:
-      default:
         return ShadAccordionSizeTokens(
           padding: const EdgeInsets.all(ShadSpacing.md),
           titlePadding: const EdgeInsets.symmetric(

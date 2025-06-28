@@ -105,7 +105,7 @@ class _ShadDialogState extends State<ShadDialog>
         return FadeTransition(
           opacity: _fadeAnimation,
           child: Material(
-            color: Colors.black.withOpacity(0.5),
+            color: Colors.black.withValues(alpha: 0.2),
             child: Center(
               child: SlideTransition(
                 position: _slideAnimation,
@@ -342,42 +342,42 @@ class _ShadDialogState extends State<ShadDialog>
       case ShadDialogVariant.default_:
         return ShadDialogVariantTokens(
           backgroundColor: theme.backgroundColor,
-          headerBackgroundColor: theme.backgroundColor,
+          headerBackgroundColor: theme.primaryColor.withValues(alpha: 0.1),
           actionsBackgroundColor: theme.backgroundColor,
-          titleColor: theme.textColor,
-          descriptionColor: theme.mutedColor,
+          titleColor: theme.primaryColor,
+          descriptionColor: theme.primaryColor.withValues(alpha: 0.8),
           iconColor: theme.primaryColor,
-          closeIconColor: theme.mutedColor,
+          closeIconColor: theme.primaryColor.withValues(alpha: 0.6),
         );
       case ShadDialogVariant.destructive:
         return ShadDialogVariantTokens(
           backgroundColor: theme.backgroundColor,
-          headerBackgroundColor: theme.errorColor.withOpacity(0.1),
+          headerBackgroundColor: theme.errorColor.withValues(alpha: 0.1),
           actionsBackgroundColor: theme.backgroundColor,
           titleColor: theme.errorColor,
-          descriptionColor: theme.errorColor.withOpacity(0.8),
+          descriptionColor: theme.errorColor.withValues(alpha: 0.8),
           iconColor: theme.errorColor,
-          closeIconColor: theme.errorColor.withOpacity(0.6),
+          closeIconColor: theme.errorColor.withValues(alpha: 0.6),
         );
       case ShadDialogVariant.warning:
         return ShadDialogVariantTokens(
           backgroundColor: theme.backgroundColor,
-          headerBackgroundColor: theme.warningColor.withOpacity(0.1),
+          headerBackgroundColor: theme.warningColor.withValues(alpha: 0.1),
           actionsBackgroundColor: theme.backgroundColor,
           titleColor: theme.warningColor,
-          descriptionColor: theme.warningColor.withOpacity(0.8),
+          descriptionColor: theme.warningColor.withValues(alpha: 0.8),
           iconColor: theme.warningColor,
-          closeIconColor: theme.warningColor.withOpacity(0.6),
+          closeIconColor: theme.warningColor.withValues(alpha: 0.6),
         );
       case ShadDialogVariant.success:
         return ShadDialogVariantTokens(
           backgroundColor: theme.backgroundColor,
-          headerBackgroundColor: theme.successColor.withOpacity(0.1),
+          headerBackgroundColor: theme.successColor.withValues(alpha: 0.1),
           actionsBackgroundColor: theme.backgroundColor,
           titleColor: theme.successColor,
-          descriptionColor: theme.successColor.withOpacity(0.8),
+          descriptionColor: theme.successColor.withValues(alpha: 0.8),
           iconColor: theme.successColor,
-          closeIconColor: theme.successColor.withOpacity(0.6),
+          closeIconColor: theme.successColor.withValues(alpha: 0.6),
         );
       case ShadDialogVariant.info:
         return ShadDialogVariantTokens(

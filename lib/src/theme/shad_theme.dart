@@ -124,17 +124,7 @@ class ShadThemeData {
 class ShadTheme extends InheritedWidget {
   final ShadThemeData data;
 
-  ShadTheme({
-    Key? key,
-    required ShadThemeData data,
-    ShadBaseColor? baseColor,
-    required Widget child,
-  }) : data = baseColor != null
-           ? (data.brightness == Brightness.dark
-                 ? ShadThemeData.dark(baseColor: baseColor)
-                 : ShadThemeData.light(baseColor: baseColor))
-           : data,
-       super(key: key, child: child);
+  const ShadTheme({super.key, required this.data, required super.child});
 
   static ShadThemeData of(BuildContext context) {
     final ShadTheme? theme = context

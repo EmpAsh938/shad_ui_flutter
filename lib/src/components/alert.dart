@@ -122,13 +122,13 @@ class _ShadAlertState extends State<ShadAlert>
           theme.brightness == Brightness.light ? 50 : 900,
         );
       case ShadAlertVariant.destructive:
-        return theme.errorColor.withOpacity(0.1);
+        return theme.errorColor.withValues(alpha: 0.1);
       case ShadAlertVariant.warning:
-        return theme.warningColor.withOpacity(0.1);
+        return theme.warningColor.withValues(alpha: 0.1);
       case ShadAlertVariant.success:
-        return theme.successColor.withOpacity(0.1);
+        return theme.successColor.withValues(alpha: 0.1);
       case ShadAlertVariant.info:
-        return theme.primaryColor.withOpacity(0.1);
+        return theme.primaryColor.withValues(alpha: 0.1);
     }
   }
 
@@ -140,13 +140,13 @@ class _ShadAlertState extends State<ShadAlert>
           theme.brightness == Brightness.light ? 200 : 700,
         );
       case ShadAlertVariant.destructive:
-        return theme.errorColor.withOpacity(0.3);
+        return theme.errorColor.withValues(alpha: 0.3);
       case ShadAlertVariant.warning:
-        return theme.warningColor.withOpacity(0.3);
+        return theme.warningColor.withValues(alpha: 0.3);
       case ShadAlertVariant.success:
-        return theme.successColor.withOpacity(0.3);
+        return theme.successColor.withValues(alpha: 0.3);
       case ShadAlertVariant.info:
-        return theme.primaryColor.withOpacity(0.3);
+        return theme.primaryColor.withValues(alpha: 0.3);
     }
   }
 
@@ -246,7 +246,7 @@ class _ShadAlertState extends State<ShadAlert>
                         Text(
                           widget.description!,
                           style: TextStyle(
-                            color: _getTextColor(theme).withOpacity(0.8),
+                            color: _getTextColor(theme).withValues(alpha: 0.8),
                             fontSize: _getFontSize() - 1,
                           ),
                         ),
@@ -265,7 +265,7 @@ class _ShadAlertState extends State<ShadAlert>
                     icon: Icon(
                       Icons.close,
                       size: _getIconSize(),
-                      color: _getTextColor(theme).withOpacity(0.6),
+                      color: _getTextColor(theme).withValues(alpha: 0.6),
                     ),
                     padding: EdgeInsets.zero,
                     constraints: BoxConstraints(

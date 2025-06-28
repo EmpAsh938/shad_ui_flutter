@@ -140,7 +140,7 @@ class _ShadBottomNavigationState extends State<ShadBottomNavigation>
         color: _getBackgroundColor(theme),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: widget.elevation,
             offset: const Offset(0, -2),
           ),
@@ -194,7 +194,7 @@ class _ShadBottomNavigationState extends State<ShadBottomNavigation>
         padding: const EdgeInsets.symmetric(vertical: ShadSpacing.sm),
         decoration: BoxDecoration(
           color: isSelected
-              ? selectedColor.withOpacity(0.1)
+              ? selectedColor.withValues(alpha: 0.1)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(ShadRadius.md),
         ),

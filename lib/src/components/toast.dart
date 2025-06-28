@@ -139,7 +139,7 @@ class _ShadToastState extends State<ShadToast>
                   borderRadius: BorderRadius.circular(sizeTokens.borderRadius),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withValues(alpha: 0.1),
                       blurRadius: 8,
                       offset: const Offset(0, 2),
                     ),
@@ -300,48 +300,48 @@ class _ShadToastState extends State<ShadToast>
     switch (widget.variant) {
       case ShadToastVariant.default_:
         return ShadToastVariantTokens(
-          backgroundColor: theme.backgroundColor,
-          borderColor: theme.borderColor,
-          titleColor: theme.textColor,
-          descriptionColor: theme.mutedColor,
+          backgroundColor: theme.primaryColor.withValues(alpha: 0.1),
+          borderColor: theme.primaryColor.withValues(alpha: 0.2),
+          titleColor: theme.primaryColor,
+          descriptionColor: theme.primaryColor.withValues(alpha: 0.8),
           iconColor: theme.primaryColor,
-          closeIconColor: theme.mutedColor,
+          closeIconColor: theme.primaryColor.withValues(alpha: 0.6),
         );
       case ShadToastVariant.destructive:
         return ShadToastVariantTokens(
-          backgroundColor: theme.errorColor.withOpacity(0.1),
-          borderColor: theme.errorColor.withOpacity(0.2),
+          backgroundColor: theme.errorColor.withValues(alpha: 0.1),
+          borderColor: theme.errorColor.withValues(alpha: 0.2),
           titleColor: theme.errorColor,
-          descriptionColor: theme.errorColor.withOpacity(0.8),
+          descriptionColor: theme.errorColor.withValues(alpha: 0.8),
           iconColor: theme.errorColor,
-          closeIconColor: theme.errorColor.withOpacity(0.6),
+          closeIconColor: theme.errorColor.withValues(alpha: 0.6),
         );
       case ShadToastVariant.warning:
         return ShadToastVariantTokens(
-          backgroundColor: theme.warningColor.withOpacity(0.1),
-          borderColor: theme.warningColor.withOpacity(0.2),
+          backgroundColor: theme.warningColor.withValues(alpha: 0.1),
+          borderColor: theme.warningColor.withValues(alpha: 0.2),
           titleColor: theme.warningColor,
-          descriptionColor: theme.warningColor.withOpacity(0.8),
+          descriptionColor: theme.warningColor.withValues(alpha: 0.8),
           iconColor: theme.warningColor,
-          closeIconColor: theme.warningColor.withOpacity(0.6),
+          closeIconColor: theme.warningColor.withValues(alpha: 0.6),
         );
       case ShadToastVariant.success:
         return ShadToastVariantTokens(
-          backgroundColor: theme.successColor.withOpacity(0.1),
-          borderColor: theme.successColor.withOpacity(0.2),
+          backgroundColor: theme.successColor.withValues(alpha: 0.1),
+          borderColor: theme.successColor.withValues(alpha: 0.2),
           titleColor: theme.successColor,
-          descriptionColor: theme.successColor.withOpacity(0.8),
+          descriptionColor: theme.successColor.withValues(alpha: 0.8),
           iconColor: theme.successColor,
-          closeIconColor: theme.successColor.withOpacity(0.6),
+          closeIconColor: theme.successColor.withValues(alpha: 0.6),
         );
       case ShadToastVariant.info:
         return ShadToastVariantTokens(
-          backgroundColor: theme.primaryColor.withOpacity(0.1),
-          borderColor: theme.primaryColor.withOpacity(0.2),
+          backgroundColor: theme.primaryColor.withValues(alpha: 0.1),
+          borderColor: theme.primaryColor.withValues(alpha: 0.2),
           titleColor: theme.primaryColor,
-          descriptionColor: theme.primaryColor.withOpacity(0.8),
+          descriptionColor: theme.primaryColor.withValues(alpha: 0.8),
           iconColor: theme.primaryColor,
-          closeIconColor: theme.primaryColor.withOpacity(0.6),
+          closeIconColor: theme.primaryColor.withValues(alpha: 0.6),
         );
     }
   }
