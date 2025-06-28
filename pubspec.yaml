@@ -11,7 +11,6 @@ topics:
   - design-system
   - mobile
   - flutter
-  - dart
 
 environment:
   sdk: ^3.8.1
